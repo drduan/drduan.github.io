@@ -5,20 +5,18 @@
   
 
   
-  <title>利用Spring-mvc的注解来解决带参数的重定向 | 又见一缕炊烟</title>
+  <title>又见一缕炊烟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分享一个 重定向传参数的方法代码如下    123456789101112131415161718192021222324@RequestMapping(value = &quot;/reg_next.do&quot; ,method=RequestMethod.GET)public String dealUserType(@RequestParam(value = &quot;cust_kind&quot;) String cust_">
-<meta name="keywords" content="spring-mvc redirect">
-<meta property="og:type" content="article">
-<meta property="og:title" content="利用Spring-mvc的注解来解决带参数的重定向">
-<meta property="og:url" content="http://drifterz.cn/2017/02/08/20170208/index.html">
+  <meta name="description" content="precise">
+<meta property="og:type" content="website">
+<meta property="og:title" content="又见一缕炊烟">
+<meta property="og:url" content="http://drifterz.cn/page/4/index.html">
 <meta property="og:site_name" content="又见一缕炊烟">
-<meta property="og:description" content="分享一个 重定向传参数的方法代码如下    123456789101112131415161718192021222324@RequestMapping(value = &quot;/reg_next.do&quot; ,method=RequestMethod.GET)public String dealUserType(@RequestParam(value = &quot;cust_kind&quot;) String cust_">
+<meta property="og:description" content="precise">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-02-08T15:10:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用Spring-mvc的注解来解决带参数的重定向">
-<meta name="twitter:description" content="分享一个 重定向传参数的方法代码如下    123456789101112131415161718192021222324@RequestMapping(value = &quot;/reg_next.do&quot; ,method=RequestMethod.GET)public String dealUserType(@RequestParam(value = &quot;cust_kind&quot;) String cust_">
+<meta name="twitter:title" content="又见一缕炊烟">
+<meta name="twitter:description" content="precise">
   
     <link rel="alternate" href="/atom.xml" title="又见一缕炊烟" type="application/atom+xml">
   
@@ -69,7 +67,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-20170208" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-20170208" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/08/20170208/" class="article-date">
   <time datetime="2017-02-07T16:00:00.000Z" itemprop="datePublished">2017-02-08</time>
@@ -82,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      利用Spring-mvc的注解来解决带参数的重定向
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/08/20170208/">利用Spring-mvc的注解来解决带参数的重定向</a>
     </h1>
   
 
@@ -105,28 +105,99 @@
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2017/02/13/20170213/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          html&amp;css 面试题
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/02/05/20170205/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">adb 知识梳理</div>
-    </a>
-  
-</nav>
+</article>
+
 
   
+    <article id="post-20170205" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/05/20170205/" class="article-date">
+  <time datetime="2017-02-04T16:00:00.000Z" itemprop="datePublished">2017-02-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/05/20170205/">adb 知识梳理</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-利用adb-录制屏幕"><a href="#1-利用adb-录制屏幕" class="headerlink" title="1. 利用adb 录制屏幕"></a>1. 利用adb 录制屏幕</h3><p> 在Android sdk下面有一些很有用的工具，adb位于platform-tools文件夹，开发者用它在设备上安装启动应用。早期的sdk版本中，adb位于tools文件夹中。<br>在终端（linux或者mac os）或者命令提示符（windows）键入<br><code>cd Downloads/android-sdk-macos/platform-tools</code><br><code>adb shell screenrecord /sdcard/example.mp4</code><br>    按ctrl + c 停止录制<br><code>adb pull /sdcard/example.mp4 ~/Desktop/</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">xudong:platform-tools xudong$ ./adb shell screenrecord /sdcard/example.mp4</span><br><span class="line">The max width/height supported by codec is 1920x1088</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ctrl+ C</span><br><span class="line">xudong:platform-tools xudong$ ./adb pull  /sdcard/example.mp4 ~/</span><br><span class="line">[100%] /sdcard/example.mp4</span><br></pre></td></tr></table></figure>
+<p>可以使用<br><code>./adb shell rm /sdcard/example.mp4</code><br>对产生的数据删除<br><a href="http://services.gradle.org/distributions" target="_blank" rel="noopener">gradle下载链接</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://drifterz.cn/2017/02/05/20170205/" data-id="cjh4vna280008h0seycd502x7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+
+    </footer>
+  </div>
+  
 </article>
+
+
+  
+    <article id="post-20170117" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/17/20170117/" class="article-date">
+  <time datetime="2017-01-16T16:00:00.000Z" itemprop="datePublished">2017-01-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/17/20170117/">JavaScript Exercise</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>test</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timmer = SetInterval(<span class="function"><span class="keyword">function</span> <span class="title">MyClick</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	</span><br><span class="line">i++;</span><br><span class="line"><span class="keyword">if</span>(i==<span class="number">6</span>)</span><br><span class="line">&#123;</span><br><span class="line">clearInterval(timmer);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"d1"</span>).innerText=i</span><br><span class="line"></span><br><span class="line">&#125;,<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$(<span class="string">'#btn'</span>)[<span class="number">0</span>].onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">alert(<span class="string">"aaaa"</span>);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="string">"p:odd"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// odd偶数行</span></span><br><span class="line">$(<span class="string">"p:even"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// odd奇数行</span></span><br><span class="line">$(<span class="string">"p:first-child"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 父标签第一个孩子</span></span><br><span class="line">$(<span class="string">"p:first-child"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 子标签第二个孩子</span></span><br><span class="line"></span><br><span class="line">$(<span class="string">"p:nth-child(2)"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 子标签第二个孩子</span></span><br><span class="line">$(<span class="string">"p:nth-type(1)"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 子标签第二个孩子</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// hash</span></span><br><span class="line"><span class="comment">// CSS3伪类  a:hover a:link a:active a:visited :focus /*动态伪类*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//弹出对话框</span></span><br><span class="line">	href=<span class="string">"javascripy:;"</span> id=<span class="string">"blogin"</span> onclick=<span class="string">"ShowLoginBox()"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//解决注入问题 和密码加密</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://drifterz.cn/2017/01/17/20170117/" data-id="cjh4vna270007h0seoyco327n" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
+  </nav>
 
 </section>
         

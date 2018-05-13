@@ -5,20 +5,18 @@
   
 
   
-  <title>利用Spring-mvc的注解来解决带参数的重定向 | 又见一缕炊烟</title>
+  <title>又见一缕炊烟</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="分享一个 重定向传参数的方法代码如下    123456789101112131415161718192021222324@RequestMapping(value = &quot;/reg_next.do&quot; ,method=RequestMethod.GET)public String dealUserType(@RequestParam(value = &quot;cust_kind&quot;) String cust_">
-<meta name="keywords" content="spring-mvc redirect">
-<meta property="og:type" content="article">
-<meta property="og:title" content="利用Spring-mvc的注解来解决带参数的重定向">
-<meta property="og:url" content="http://drifterz.cn/2017/02/08/20170208/index.html">
+  <meta name="description" content="precise">
+<meta property="og:type" content="website">
+<meta property="og:title" content="又见一缕炊烟">
+<meta property="og:url" content="http://drifterz.cn/page/5/index.html">
 <meta property="og:site_name" content="又见一缕炊烟">
-<meta property="og:description" content="分享一个 重定向传参数的方法代码如下    123456789101112131415161718192021222324@RequestMapping(value = &quot;/reg_next.do&quot; ,method=RequestMethod.GET)public String dealUserType(@RequestParam(value = &quot;cust_kind&quot;) String cust_">
+<meta property="og:description" content="precise">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-02-08T15:10:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用Spring-mvc的注解来解决带参数的重定向">
-<meta name="twitter:description" content="分享一个 重定向传参数的方法代码如下    123456789101112131415161718192021222324@RequestMapping(value = &quot;/reg_next.do&quot; ,method=RequestMethod.GET)public String dealUserType(@RequestParam(value = &quot;cust_kind&quot;) String cust_">
+<meta name="twitter:title" content="又见一缕炊烟">
+<meta name="twitter:description" content="precise">
   
     <link rel="alternate" href="/atom.xml" title="又见一缕炊烟" type="application/atom+xml">
   
@@ -69,10 +67,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-20170208" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-20161228" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/02/08/20170208/" class="article-date">
-  <time datetime="2017-02-07T16:00:00.000Z" itemprop="datePublished">2017-02-08</time>
+    <a href="/2016/12/28/20161228/" class="article-date">
+  <time datetime="2016-12-27T16:00:00.000Z" itemprop="datePublished">2016-12-28</time>
 </a>
     
   </div>
@@ -82,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      利用Spring-mvc的注解来解决带参数的重定向
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/28/20161228/">各种最新版本jetbrains软件激活</a>
     </h1>
   
 
@@ -91,42 +91,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="分享一个-重定向传参数的方法"><a href="#分享一个-重定向传参数的方法" class="headerlink" title="分享一个 重定向传参数的方法"></a>分享一个 重定向传参数的方法</h3><p><code>代码如下</code><br>    <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(value = <span class="string">"/reg_next.do"</span> ,method=RequestMethod.GET)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">dealUserType</span><span class="params">(@RequestParam(value = <span class="string">"cust_kind"</span>)</span> String cust_kind,RedirectAttributes redirectAttrs,Model model) </span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">switch</span> (cust_kind) &#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">case</span> <span class="string">"1"</span>:</span><br><span class="line">		redirectAttrs.addFlashAttribute(<span class="string">"usertype"</span>, <span class="string">"1"</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> <span class="string">"2"</span>:</span><br><span class="line">		redirectAttrs.addFlashAttribute(<span class="string">"usertype"</span>, <span class="string">"2"</span>);</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">default</span>:</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">"redirect:../User/redirect_reg_next.do"</span>;<span class="comment">//默认为forward模式  </span></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@RequestMapping</span>(value = <span class="string">"redirect_reg_next.do"</span> ,method=RequestMethod.GET)</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">dealUserTypeAndRedirect</span><span class="params">(@ModelAttribute(<span class="string">"usertype"</span>)</span> String form) </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">"forward:///User/register_step2.jsp"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<pre><code>此时就可以在jsp页面中 使用JSTL进行显示信息 如：`${usertype}`
-</code></pre>
+        <h2 id="WebStorm-2017-2-2-版本"><a href="#WebStorm-2017-2-2-版本" class="headerlink" title="WebStorm 2017.2.2 版本"></a>WebStorm 2017.2.2 版本</h2><h3 id="破解方式："><a href="#破解方式：" class="headerlink" title="破解方式："></a>破解方式：</h3><p>安装以后，打开软件会弹出一个对话框；选择“license server” 输入：<a href="http://114.215.133.70:41017" target="_blank" rel="noopener">http://114.215.133.70:41017</a><br>2016.2.3 版本的破解方式：<br>目前最新的就是2.3版本，在打开的License Activation窗口中选择“activation code”，在输入框输入下面的注册码</p>
+        
+          <p class="article-more-link">
+            <a href="/2016/12/28/20161228/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://drifterz.cn/2017/02/08/20170208/" data-id="cjh4vna290009h0sezp0pzjlb" class="article-share-link">Share</a>
+      <a data-url="http://drifterz.cn/2016/12/28/20161228/" data-id="cjh4vna210003h0seqvwv8txh" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spring-mvc-redirect/">spring-mvc redirect</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jetbrains/">Jetbrains</a></li></ul>
 
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2017/02/13/20170213/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          html&amp;css 面试题
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/02/05/20170205/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">adb 知识梳理</div>
-    </a>
-  
-</nav>
+</article>
+
 
   
-</article>
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+  </nav>
 
 </section>
         

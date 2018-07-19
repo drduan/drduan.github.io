@@ -69,6 +69,60 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20170213" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/13/20170213/" class="article-date">
+  <time datetime="2017-02-12T16:00:00.000Z" itemprop="datePublished">2017-02-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/13/20170213/">html&amp;css 面试题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>介绍一个番茄工作法：来自Youtube 需要fq 😂</p>
+</blockquote>
+<iframe width="572" height="295" src="https://www.youtube.com/embed/CT70iCaG0Gs" frameborder="0" allowfullscreen></iframe>
+
+
+<pre><code>正文
+</code></pre><ol>
+<li><p>CSS中 link 和@import 的区别是？</p>
+<ol>
+<li>前者 <link> 是 html 标签，只能放入 html 源代码中使用， link 标签除了可以加载 CSS 外，还可以做很多其它的事情，比如定义 RSS ，定义 rel 连接属性等， @import 看作为 css 的样式，就<b>只能加载 CSS<b> 了；</b></b></li>
+<li>当使用 Javascript 控制 DOM 去改变样式的时候，只能使用 link 方式，因为 @import 眼里只有 CSS ，不是 DOM 可以控制的；</li>
+<li>link 是 XHTML 标签，无兼容问题； @import 是在 CSS2.1 提出的，低版本的浏览器不支持</li>
+</ol>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://drifterz.cn/2017/02/13/20170213/" data-id="cjh4vna2a000ch0sepj28xgpa" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html-css/">html css</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-20170208" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/08/20170208/" class="article-date">
@@ -150,48 +204,6 @@
 
 
   
-    <article id="post-20170117" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/01/17/20170117/" class="article-date">
-  <time datetime="2017-01-16T16:00:00.000Z" itemprop="datePublished">2017-01-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/17/20170117/">JavaScript Exercise</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>test</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timmer = SetInterval(<span class="function"><span class="keyword">function</span> <span class="title">MyClick</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	</span><br><span class="line">i++;</span><br><span class="line"><span class="keyword">if</span>(i==<span class="number">6</span>)</span><br><span class="line">&#123;</span><br><span class="line">clearInterval(timmer);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">"d1"</span>).innerText=i</span><br><span class="line"></span><br><span class="line">&#125;,<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$(<span class="string">'#btn'</span>)[<span class="number">0</span>].onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">alert(<span class="string">"aaaa"</span>);</span><br><span class="line">&#125;</span><br><span class="line">$(<span class="string">"p:odd"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// odd偶数行</span></span><br><span class="line">$(<span class="string">"p:even"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// odd奇数行</span></span><br><span class="line">$(<span class="string">"p:first-child"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 父标签第一个孩子</span></span><br><span class="line">$(<span class="string">"p:first-child"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 子标签第二个孩子</span></span><br><span class="line"></span><br><span class="line">$(<span class="string">"p:nth-child(2)"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 子标签第二个孩子</span></span><br><span class="line">$(<span class="string">"p:nth-type(1)"</span>).css(<span class="string">"color"</span>,“red”);<span class="comment">// 子标签第二个孩子</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// hash</span></span><br><span class="line"><span class="comment">// CSS3伪类  a:hover a:link a:active a:visited :focus /*动态伪类*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//弹出对话框</span></span><br><span class="line">	href=<span class="string">"javascripy:;"</span> id=<span class="string">"blogin"</span> onclick=<span class="string">"ShowLoginBox()"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//解决注入问题 和密码加密</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://drifterz.cn/2017/01/17/20170117/" data-id="cjh4vna270007h0seoyco327n" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -210,7 +222,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jetbrains/">Jetbrains</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring-Shiro/">Spring Shiro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html-css/">html css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shiro-SpringMVC/">shiro,SpringMVC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-mvc-redirect/">spring-mvc redirect</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/">sql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/书摘/">书摘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转发-三岛由纪夫/">转发 三岛由纪夫</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jetbrains/">Jetbrains</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring-Shiro/">Spring Shiro</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html-css/">html css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/">js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/redis-centos7-virtualbox/">redis;centos7;virtualbox;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shiro-SpringMVC/">shiro,SpringMVC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-mvc-redirect/">spring-mvc redirect</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/">sql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/书摘/">书摘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/转发-三岛由纪夫/">转发 三岛由纪夫</a></li></ul>
     </div>
   </div>
 
@@ -220,7 +232,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Jetbrains/" style="font-size: 10px;">Jetbrains</a> <a href="/tags/Spring-Shiro/" style="font-size: 10px;">Spring Shiro</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/html-css/" style="font-size: 10px;">html css</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/shiro-SpringMVC/" style="font-size: 10px;">shiro,SpringMVC</a> <a href="/tags/spring-mvc-redirect/" style="font-size: 10px;">spring-mvc redirect</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/转发-三岛由纪夫/" style="font-size: 10px;">转发 三岛由纪夫</a>
+      <a href="/tags/Jetbrains/" style="font-size: 10px;">Jetbrains</a> <a href="/tags/Spring-Shiro/" style="font-size: 10px;">Spring Shiro</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/html-css/" style="font-size: 10px;">html css</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/redis-centos7-virtualbox/" style="font-size: 10px;">redis;centos7;virtualbox;</a> <a href="/tags/shiro-SpringMVC/" style="font-size: 10px;">shiro,SpringMVC</a> <a href="/tags/spring-mvc-redirect/" style="font-size: 10px;">spring-mvc redirect</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/书摘/" style="font-size: 10px;">书摘</a> <a href="/tags/转发-三岛由纪夫/" style="font-size: 10px;">转发 三岛由纪夫</a>
     </div>
   </div>
 
@@ -229,7 +241,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a></li></ul>
     </div>
   </div>
 
@@ -240,6 +252,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/07/19/20180719/">vbox+centos7+redis搭建Redis开发环境</a>
+          </li>
         
           <li>
             <a href="/2017/06/01/1761/">Oracle Exercise</a>
@@ -255,10 +271,6 @@
         
           <li>
             <a href="/2017/02/21/20170221/">机器深度学习tensorflow 1.0.0</a>
-          </li>
-        
-          <li>
-            <a href="/2017/02/20/20170220/">利用Python抓取百家戏苑视频下载链接</a>
           </li>
         
       </ul>

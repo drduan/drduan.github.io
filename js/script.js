@@ -111,6 +111,8 @@
     isMobileNavAnim = false,
     mobileNavAnimDuration = 200;
 
+
+
   var startMobileNavAnim = function(){
     isMobileNavAnim = true;
   };

@@ -2,6 +2,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
@@ -9,8 +18,11 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,10 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
 
 
 
@@ -50,25 +58,19 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.2">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.2">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.2">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="sql,">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.2" color="#222">
 
 
 
@@ -78,8 +80,35 @@
 
 
 
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
 
-<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+
+  
+
+
+
+
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
 <meta name="keywords" content="sql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle Exercise">
@@ -94,29 +123,6 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
 
 
 
@@ -124,7 +130,11 @@
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Oracle Exercise | 又见一缕炊烟</title>
   
@@ -135,6 +145,36 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
@@ -160,13 +200,15 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">Change</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -174,35 +216,37 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -210,12 +254,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -228,6 +280,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -237,7 +291,7 @@
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="段旭东">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="precise">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -250,11 +304,19 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Oracle Exercise</h1>
+          <h1 class="post-title" itemprop="name headline">Oracle Exercise
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -262,13 +324,18 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-01T00:00:00+08:00">
-                2017-06-01
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-06-01 00:00:00 / Modified: 21:54:35" itemprop="dateCreated datePublished" datetime="2017-06-01T00:00:00+08:00">2017-06-01</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -303,6 +370,9 @@
         <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br></pre></td><td class="code"><pre><span class="line">//代码片段</span><br><span class="line">&lt;select id=""&gt;</span><br><span class="line">    <span class="keyword">select</span> <span class="keyword">from</span> ....</span><br><span class="line">        &lt;<span class="keyword">where</span>&gt;</span><br><span class="line">           &lt;<span class="keyword">include</span> refid=<span class="string">""</span>/&gt;</span><br><span class="line">        &lt;/<span class="keyword">where</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">select</span>&gt;</span><br><span class="line"></span><br><span class="line">//做更改时候 需要作出判断 是否已经删除</span><br><span class="line">//msg 服务器端返回</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> dba_users <span class="keyword">order</span> <span class="keyword">by</span> user_id <span class="keyword">desc</span> <span class="keyword">fetch</span> <span class="keyword">first</span> <span class="number">10</span> <span class="keyword">rows</span> <span class="keyword">only</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 查看后台进程信息</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> v$process ; V$DATABASE; </span><br><span class="line"></span><br><span class="line"><span class="comment">-- 我的上高</span></span><br><span class="line"></span><br><span class="line"><span class="comment">--临时表</span></span><br><span class="line"><span class="comment">-- 基于会话</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">global</span> <span class="keyword">temporary</span> <span class="keyword">table</span> 表名(字段列表) <span class="keyword">on</span> <span class="keyword">commit</span> <span class="keyword">preserve</span> <span class="keyword">rows</span>;</span><br><span class="line"><span class="comment">-- 基于事务</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">global</span> <span class="keyword">temporary</span> <span class="keyword">table</span> 表名(字段列表) <span class="keyword">on</span> <span class="keyword">commit</span> <span class="keyword">delete</span> <span class="keyword">rows</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 虚拟列</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> tbwork</span><br><span class="line">(</span><br><span class="line">    <span class="comment">-- /... 可以当计算使用</span></span><br><span class="line">    W_BIRTHYEAR <span class="built_in">NUMBER</span>,</span><br><span class="line">    W_INAGE <span class="built_in">NUMBER</span>,</span><br><span class="line">    W_INAGE <span class="built_in">NUMBER</span> <span class="keyword">GENERATED</span> <span class="keyword">ALWAYS</span> <span class="keyword">AS</span> (W_INTIME-W_BIRTHYEAR) VIRTURE</span><br><span class="line">)；</span><br><span class="line"></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> table_name <span class="keyword">rename</span> <span class="keyword">to</span> new_table_name;</span><br><span class="line"></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">add</span> <span class="keyword">constraint</span> 约束名 primary <span class="keyword">key</span>;</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">drop</span> <span class="keyword">constraint</span> 约束名;</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">drop</span> <span class="keyword">constraint</span> <span class="keyword">unique</span>(列名);</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">modify</span> 列名 <span class="keyword">not</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--外键 </span></span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">table</span> * </span><br><span class="line"> (</span><br><span class="line">    a referencs b(w_id)</span><br><span class="line"> )</span><br><span class="line"></span><br><span class="line"> <span class="keyword">group</span> <span class="keyword">by</span> _ <span class="keyword">having</span> _</span><br><span class="line"></span><br><span class="line"> <span class="keyword">select</span> <span class="keyword">from</span> <span class="keyword">where</span> _ <span class="keyword">IS</span> <span class="literal">NULL</span>;</span><br><span class="line"> <span class="keyword">select</span> <span class="keyword">from</span> <span class="keyword">where</span> _ <span class="keyword">IS</span> <span class="keyword">NOT</span> <span class="literal">NULL</span>;</span><br><span class="line"> </span><br><span class="line"> % 任意类型 任意长度</span><br><span class="line"> _ 匹配单个字符</span><br><span class="line"></span><br><span class="line"><span class="comment">-- DML语句 同一个步骤中更新插入数据行 抽取 转换载入类型的</span></span><br><span class="line"> <span class="keyword">truncate</span> <span class="keyword">table</span> _; 不能回滚</span><br><span class="line"> <span class="keyword">merge</span> <span class="keyword">into</span> <span class="keyword">table</span> </span><br><span class="line"> <span class="keyword">using</span> table2</span><br><span class="line"> <span class="keyword">on</span> expression</span><br><span class="line"> <span class="keyword">when</span> <span class="keyword">matched</span> <span class="keyword">then</span> <span class="keyword">update</span></span><br><span class="line"> <span class="keyword">when</span> <span class="keyword">not</span> <span class="keyword">matched</span> <span class="keyword">then</span> <span class="keyword">insert</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">merge</span> <span class="keyword">into</span></span><br><span class="line">roominfo_copy r1</span><br><span class="line"><span class="keyword">using</span> roominfo1 r2</span><br><span class="line"><span class="keyword">on</span> (r1.rno = r2.rno)</span><br><span class="line"><span class="keyword">when</span> <span class="keyword">matched</span> <span class="keyword">then</span></span><br><span class="line"><span class="keyword">update</span> <span class="keyword">set</span> r1.toward = r2.toward</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">merge</span> <span class="keyword">into</span> roominfo_copy r1</span><br><span class="line"><span class="keyword">using</span> roominfo1 r2</span><br><span class="line"><span class="keyword">on</span>(r1.rno=r2.rno) <span class="comment">-- (1 = 0)</span></span><br><span class="line"><span class="keyword">when</span> <span class="keyword">not</span> <span class="keyword">matched</span> <span class="keyword">then</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">values</span> ();</span><br><span class="line"></span><br><span class="line">PL/SQL</span><br><span class="line">一种过程处理语言 对sql语句的扩展对大小写不敏感 </span><br><span class="line"><span class="keyword">declare</span>  <span class="keyword">begin</span>  <span class="keyword">exception</span>  <span class="keyword">end</span>;</span><br><span class="line"><span class="comment">-- declare 变量名称 变量类型 [NOT NULL] [:=value]</span></span><br><span class="line"><span class="keyword">declare</span> v_username VARCHAR2 (<span class="number">20</span>) <span class="keyword">DEFAULT</span> <span class="string">'jerry'</span>;</span><br><span class="line"><span class="keyword">begin</span> </span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">into</span> v_username <span class="keyword">from</span> sys.all_users <span class="keyword">where</span> user_id = <span class="number">102</span>;</span><br><span class="line">dbms_output.put_line(v_username);</span><br><span class="line"><span class="keyword">end</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">declare</span> </span><br><span class="line">v_name student.name%<span class="keyword">type</span>;</span><br><span class="line"></span><br><span class="line">procedure calc_revenue (company_id in NUMBER) S</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">program: calc_revenue</span></span><br><span class="line"><span class="comment">Author: </span></span><br><span class="line"><span class="comment">Change history:</span></span><br><span class="line"><span class="comment">    10-JUN-2014 incooporate new formulas</span></span><br><span class="line"><span class="comment">    10-JUN-2014 incooporate new formulas</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">-- oracle数据库中主要使用两种主要类型的函数 单行函数和当行函数 </span></span><br><span class="line"><span class="comment">-- 单行函数 分为 字符函数  数字函数 日期函数 转换函数 通用函数</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">upper</span>(<span class="string">'i love you '</span>) 大写, <span class="keyword">lower</span>(<span class="string">''</span>)  小写 <span class="keyword">from</span> dual;</span><br><span class="line"><span class="keyword">select</span> <span class="keyword">replace</span>(<span class="string">''</span>,<span class="string">''</span>) 替换<span class="number">1</span> ,<span class="keyword">replace</span>(<span class="string">''</span>,<span class="string">''</span>,<span class="string">''</span>) <span class="keyword">from</span> dual;</span><br><span class="line"><span class="keyword">select</span> <span class="keyword">concat</span>(n,m)</span><br><span class="line">inster() <span class="comment">--返回要截取的字符串在字符串中的位置</span></span><br><span class="line"><span class="keyword">LTRIM</span> <span class="keyword">RTRIM</span> <span class="keyword">TRIM</span></span><br><span class="line"><span class="keyword">ASCII</span> 函数返回与指定字符相对应的十进制数 <span class="comment">-- select  ASCII('A') A, FROM dual;</span></span><br><span class="line"><span class="keyword">ROUND</span>(m,n)</span><br><span class="line">TRUNC(m,n)</span><br><span class="line">求余数 <span class="keyword">MOD</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">sysdate</span></span><br><span class="line">  <span class="keyword">from</span> dual; <span class="comment">-- 11-8 月 - 14</span></span><br><span class="line">  <span class="keyword">select</span> systimestamp <span class="keyword">from</span> dual</span><br><span class="line"></span><br><span class="line">  <span class="keyword">alter</span> <span class="keyword">session</span> <span class="keyword">set</span> nls_date_format = <span class="string">'yyyy-mm-dd hh24:mi:ss'</span></span><br><span class="line">  months_between()</span><br><span class="line"></span><br><span class="line"><span class="comment">--   存储过程 缺点</span></span><br><span class="line"><span class="keyword">create</span> [ <span class="keyword">or</span> <span class="keyword">replace</span>] <span class="keyword">procedure</span> procedure_name</span><br><span class="line"> [(parameter_name [<span class="keyword">in</span> | <span class="keyword">out</span> | <span class="keyword">in</span> <span class="keyword">out</span> ] datatype [,....]]</span><br><span class="line"> &#123;<span class="keyword">is</span>|<span class="keyword">as</span>&#125;</span><br><span class="line"> <span class="keyword">begin</span></span><br><span class="line">   procedure_body</span><br><span class="line"> <span class="keyword">end</span> procedure_name;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">procedure</span> proc_update_room_price(</span><br><span class="line">  p_rno roominfo.rno%<span class="keyword">type</span>,</span><br><span class="line">  p_rprice <span class="built_in">float</span></span><br><span class="line"> ) <span class="keyword">IS</span></span><br><span class="line"> r_count <span class="built_in">integer</span>;</span><br><span class="line"> <span class="keyword">begin</span> </span><br><span class="line"> <span class="keyword">select</span>  <span class="keyword">count</span>(*) </span><br><span class="line">   <span class="keyword">into</span> r_count</span><br><span class="line">   <span class="keyword">from</span> roominfo</span><br><span class="line"><span class="keyword">where</span> rno=p_rno;</span><br><span class="line">if r_count = 1 then</span><br><span class="line"><span class="keyword">update</span> roominfo <span class="keyword">set</span> rprice = p_rprice <span class="keyword">where</span> rno = p_rno;</span><br><span class="line"><span class="keyword">commit</span>;</span><br><span class="line"><span class="keyword">end</span> <span class="keyword">if</span> ;</span><br><span class="line">exception</span><br><span class="line">  when others then</span><br><span class="line">    <span class="keyword">rollback</span>;<span class="keyword">end</span> proc_update_room_price;</span><br><span class="line"></span><br><span class="line">exec proc_update_room_price ('','');</span><br><span class="line"><span class="keyword">call</span> ? <span class="comment">-- ????????/</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">procedure</span> proc_update_room_price;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 触发器  DML DDL INSTEAD OF 系统事件触发器</span></span><br><span class="line"><span class="comment">-- 修改触发器状态         </span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">trigger</span> trig_check_atprice</span><br><span class="line"><span class="keyword">before</span> </span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">on</span> atariff</span><br><span class="line"> <span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span></span><br><span class="line"> <span class="keyword">begin</span></span><br><span class="line"> <span class="keyword">if</span> :NEW.atprice&lt;<span class="number">10</span> <span class="keyword">Then</span></span><br><span class="line"> RAISE_APPLICATION_ERROR(<span class="number">-20001</span>,<span class="string">'超出系统设置的最低价格!'</span>);</span><br><span class="line"> <span class="keyword">end</span> <span class="keyword">if</span> ;</span><br><span class="line"> <span class="keyword">end</span> trig_check_atprice;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">create</span> <span class="keyword">trigger</span> trig_atprice </span><br><span class="line"> <span class="keyword">before</span> </span><br><span class="line"> <span class="keyword">update</span> <span class="keyword">on</span> arariff</span><br><span class="line"> <span class="keyword">for</span> <span class="keyword">each</span> <span class="keyword">row</span></span><br><span class="line"> <span class="keyword">declare</span> </span><br><span class="line"> oldvalue := : OLD.atprice;</span><br><span class="line"> newvalue : = :NEW.atprice;</span><br><span class="line"> DBMS_OUTPUT.PUT_LINE('原来价格='||oldvalue||',现在价格'||newvalue||'差是  ')</span><br><span class="line"></span><br><span class="line"><span class="comment">--  索引是建立在表上的可选对象，器关键在于通过一组排序后的索引建来取代默认的全表扫描检索方式，从而提高检索效率。</span></span><br><span class="line"><span class="comment">--  索引在逻辑上和物理上都与相关的表的数据无关。</span></span><br><span class="line"><span class="comment">--  可以按照列的多少，索引值是否唯一和索引数据的组织形式对索引进行分类</span></span><br><span class="line"><span class="comment">--  单列索引 复合索引 位图索引 函数索引</span></span><br></pre></td></tr></table></figure>
       
     </div>
+
+    
+
     
     
     
@@ -358,17 +428,10 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
-          
-
-
           
 
   
@@ -403,44 +466,75 @@
               <p class="site-description motion-element" itemprop="description">precise</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">14</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
+                <div class="site-state-item site-state-posts">
                 
-                  <span class="site-state-item-count">12</span>
-                  <span class="site-state-item-name">tags</span>
+                  <a href="/archives/">
                 
-              </div>
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
             
-
-          </nav>
-
           
-
-          
-
-          
-          
-
-          
-          
-
           
 
         </div>
@@ -460,17 +554,21 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+        <div class="copyright"> &copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">段旭东</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.8.0</div>
 
 
 
@@ -478,12 +576,13 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.2</div>
 
 
 
 
         
+
 
 
 
@@ -503,7 +602,10 @@
     
 
     
+	
+    
 
+    
   </div>
 
   
@@ -522,7 +624,11 @@
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -542,16 +648,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -560,18 +656,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
 
 
 
@@ -579,29 +670,15 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
 
 
 
@@ -609,11 +686,7 @@
 
 
 
-
-
   
-
-
 
 
 
@@ -637,6 +710,14 @@
   
 
   
+
+  
+
+  
+  
+
+  
+
   
 
   
